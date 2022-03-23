@@ -1,0 +1,4 @@
+Architecture  60.5
+Web Engineering   70
+Big Data   80.9
+Lab        79.2
