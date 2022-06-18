@@ -1,5 +1,7 @@
+import java.text.DecimalFormat;
 
 public class praactiehoga {
+	DecimalFormat df = new DecimalFormat("0.0");
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,15 +24,10 @@ public class praactiehoga {
 		}
 		System.out.println(max);
 		System.out.println(k);
+		int p = 169194;
+		int j = (int) Math.sqrt(p);
+		System.out.println(j);
 		
-		
-		
-		
-	
-		
-		
-		
-
 	}
 
 }
