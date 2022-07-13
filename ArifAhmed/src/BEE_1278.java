@@ -1,11 +1,9 @@
-
 import java.util.Scanner;
 
-public class p_bee2 {
+public class BEE_1278 {
 	static Scanner in = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		
 		for(;;) {
 			String[] str;
 			str = new String[100];
@@ -13,7 +11,6 @@ public class p_bee2 {
 			in.nextLine();
 			int [] p = new int[100]; 
 			int z = 0;
-			int f = 0;
 			int d = 0;
 			int[] d1 = new int[100];
 			int[] h = new int[100];
@@ -55,6 +52,11 @@ public class p_bee2 {
 					if(max<=u1[i]) {
 						max = u1[i];
 					}
+					// new
+					else if(max<=d1[i]) {
+						max = d1[i];
+					}
+					//new
 				}
 			}// second loop max
 			for(int i = 0; i<t; i++) {
@@ -65,6 +67,14 @@ public class p_bee2 {
 						}
 					z = res.length()+(r1[i]-1);
 				}
+				//new
+				else if(max==d1[i]) {
+					for(String w:words){
+						res = res + w;
+						}
+					z = res.length()+(r1[i]-1);
+				}
+				//new
 				
 			}// third loop max_length
 			for(int i = 0; i<t; i++) {
@@ -72,11 +82,13 @@ public class p_bee2 {
 					u1[i] = u1[i]+(r1[i]-1)+d1[i];
 					fin[i] = z-u1[i];
 				}
+				
 			}// 4th loop first blank spaces
 			
 			for(int i = 0; i<t; i++) {
+			    int f = 0;
 				res="";
-				f = 0;
+				//System.out.println(d1[i]);
 				//System.out.println(str[i]);//full_word
 				//System.out.println(p[i]);//length
 				//System.out.println(h[i]);//blank_space
@@ -119,12 +131,13 @@ public class p_bee2 {
 						}
 						*/
 					}
-				
 				System.out.print(res);
 				System.out.println();
 			}//result
+			System.out.println();
 		}
 		
+
 	}
 
 }
