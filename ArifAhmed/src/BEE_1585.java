@@ -13,7 +13,11 @@ public class BEE_1585 {
 			System.out.println(area+" cm2");
 			
 		}
+		
 		/*
+		 * char c ='1';
+		int r = Character.getNumericValue(c);
+		System.out.println(r+1);
 		Wrapper Class
 		********
 		int j = 100;
