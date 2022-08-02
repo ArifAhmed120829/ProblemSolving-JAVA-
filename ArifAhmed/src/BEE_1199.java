@@ -73,6 +73,12 @@ public class BEE_1199 {
 						}
 						//
 						String q1 = String.valueOf(quotient);
+						if(q1.equals("10")) q1 = "A";
+						else if(q1.equals("11")) q1 = "B";
+						else if(q1.equals("12")) q1 = "C";
+						else if(q1.equals("13")) q1 = "D";
+						else if(q1.equals("14")) q1 = "E";
+						else if(q1.equals("15")) q1 = "F";
 						res = q1+ne;
 						System.out.print("0x"+res);
 						System.out.println();
