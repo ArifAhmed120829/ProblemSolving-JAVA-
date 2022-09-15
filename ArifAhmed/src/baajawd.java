@@ -1,5 +1,3 @@
-package Java_classes;
-
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class practicemn {
+public class baajawd {
 	static int plus(int a, int b) {
 		return a+b;
 	}

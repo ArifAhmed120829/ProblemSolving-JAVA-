@@ -1,13 +1,10 @@
-package Java_classes;
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class practicemn {
+public class BEE_2493 {
 	static int plus(int a, int b) {
 		return a+b;
 	}
@@ -25,12 +22,12 @@ public class practicemn {
 		String[] space;
 		String result;
 		String[] final_result;
-		String key = "" ;
-		while((key = in.readLine()) != null)
+		String key[] = new String[51];
+		while((key = in.readLine().split(" ")) != null)
 		{
 			int failure_numbers = 0;
 			String output = "";
-			int total_numbers = Integer.valueOf(key);
+			int total_numbers = Integer.valueOf(key[0]);
 			ArrayList<Integer> list = new ArrayList<Integer>();
 			ArrayList<String> list2 = new ArrayList<String>();
 			ArrayList<String> list3 = new ArrayList<String>();
@@ -125,11 +122,20 @@ public class practicemn {
 			System.out.print(output.trim());
 			System.out.println();
 			
-			
 		}
 		in.close();
+		/*
+		 * 3
+8 4=5
+2 5=5
+1 3=4
+samuel 2 +
+abner 3 +
+aline 1 *
+
+		 */
+		
 
 	}
 
 }
-
