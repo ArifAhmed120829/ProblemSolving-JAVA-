@@ -3,8 +3,13 @@ package Java_classes;
 public class f {
 
 	public static void main(String[] args) {
-		int [] arr = {10,20};
-		System.out.println(Math.max(arr[0], arr[1]));
+		int n = 5;
+		int f = 5;
+		int e = f/n;
+		if(f%n!=0) {
+			e++;
+		}
+		System.out.println(e);
 
 	}
 
