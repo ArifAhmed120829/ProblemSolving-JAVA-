@@ -15,6 +15,8 @@ public class prcd {
     public static void main(String[] args)
         throws IOException
     {
+    	int j =3;
+    	System.out.println(j%2);
  
         // Creating an object of BufferedReader class
         BufferedReader bi = new BufferedReader(
