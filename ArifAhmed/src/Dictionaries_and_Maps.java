@@ -16,15 +16,16 @@ public class Dictionaries_and_Maps {
 		        while(in.hasNext()){
 		            String s = in.next();
 		            // Write code here
-		            for(java.util.Map.Entry<String, Integer> entry: phonebook.entrySet()) {
-
-		                if(entry.getKey() .equals(s)  ) {
-		                  System.out.println( entry.getKey()+"="+entry.getValue());
-		                }
-		               
-		              }
+		            if(phonebook.containsKey(s)) {
+		            	System.out.println(s+"="+phonebook.get(s));
+		            }
+		            else {
+		            	System.out.println("Not found");
+		            }
+		           
 		        }
 		        in.close();
+		        //solved
 		    
 		
 		
