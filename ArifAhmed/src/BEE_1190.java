@@ -1,11 +1,9 @@
 
-
 import java.text.DecimalFormat;
-
 
 import java.util.Scanner;
 
-public class BEE_1188 {
+public class BEE_1190 {
 	static DecimalFormat df = new DecimalFormat("0.0");
 
 	public static void main(String[] args) {
@@ -18,7 +16,7 @@ public class BEE_1188 {
 			for(int  i = 0; i<12; i++) {
 				for(int j = 0; j<12; j++) {
 					arr[i][j] = in.nextDouble();
-					if(i>j && k<j) {
+					if(i<j && k<j) {
 						sum_avg = sum_avg + arr[i][j];
 					}
 				}
@@ -30,7 +28,7 @@ public class BEE_1188 {
 			for(int  i = 0; i<12; i++) {
 				for(int j = 0; j<12; j++) {
 					arr[i][j] = in.nextDouble();
-					if(i>j && k<j) {
+					if(i<j && k<j) {
 						sum_avg = sum_avg + arr[i][j];
 						count++;
 					}
