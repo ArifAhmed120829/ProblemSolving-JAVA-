@@ -3,7 +3,7 @@ package LeetCode_Solving;
 
 import java.util.Arrays;
 
-class Solution {
+class Solution2145 {
     public static int[] twoSum(int[] nums, int target) {
     	int[] arr = new int[2];
         for(int i = 0; i<nums.length; i++) {
@@ -28,9 +28,9 @@ public class One_TwoSum {
 		int target1 = 9;
 		int target2 = 6;
 		int target3 = 6;
-		System.out.println(Arrays.toString(Solution.twoSum(nums1,target1)));
-		System.out.println(Arrays.toString(Solution.twoSum(nums2,target2)));
-		System.out.println(Arrays.toString(Solution.twoSum(nums3,target3)));
+		System.out.println(Arrays.toString(Solution2145.twoSum(nums1,target1)));
+		System.out.println(Arrays.toString(Solution2145.twoSum(nums2,target2)));
+		System.out.println(Arrays.toString(Solution2145.twoSum(nums3,target3)));
 
 	}
 
