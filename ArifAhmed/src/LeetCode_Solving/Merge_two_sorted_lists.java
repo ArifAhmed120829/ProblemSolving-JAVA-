@@ -12,18 +12,8 @@ class ListNode{
 		this.data = d;
 		this.next = n;
 	}
-	public int getData() {
-		return data;
-	}
-	public void setData(int d) {
-		this.data = d;
-	}
-	public ListNode getNode() {
-		return next;
-	}
-	public void setNode(ListNode nd) {
-		this.next = nd;
-	}
+	
+	
 }
 class Solution59 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
@@ -48,30 +38,25 @@ class Solution59 {
         }
         return temp_node.next;
     }
+    
 }
 
 
 public class Merge_two_sorted_lists {
 
 	public static void main(String[] args) {
-		ListNode Ln = new ListNode(1,null);
-		ListNode Ln2 = new ListNode(2,Ln);
-		ListNode Ln3 = new ListNode(3,Ln2);
-		ListNode Ln4 = new ListNode(4,Ln3);
-		ListNode Ln5 = new ListNode(5,Ln4);
-		ListNode Ln6 = new ListNode(6,Ln5);
-		ListNode list1 = new ListNode(Ln.getData(),Ln.next);
-		list1 = new ListNode(Ln2.getData());
-		list1 = new ListNode(Ln3.getData());
-		ListNode list2 = new ListNode(Ln4.getData());
-		list2 = new ListNode(Ln5.getData());
-		list2 = new ListNode(Ln6.getData());
-		Solution59 ans = new Solution59();
-		System.out.println(ans.mergeTwoLists(list1.next, list2.next));
-		System.out.println(list1.getData());
-		System.out.println(list1.getData());
-		System.out.println(list1.getData());
+		ListNode head = null;    
+		ListNode tail = null;  
+		ListNode newNode = new ListNode(1);  
+		 tail.next = newNode;
+		 ListNode newNode2 = new ListNode(2);  
+		 tail.next = newNode2;
+		 ListNode newNode3 = new ListNode(3); 
+		 tail.next = newNode3;
+		 System.out.println(tail);
+		 
 		
+	
 		
 		
 
