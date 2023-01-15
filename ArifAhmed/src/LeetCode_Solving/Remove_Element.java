@@ -32,8 +32,8 @@ public class Remove_Element {
 
 	public static void main(String[] args) {
 		Solution800 ob = new Solution800();
-		int[] nums = {3,2,2,3}; // Input array
-		int val = 3; // Value to remove
+		int[] nums = {0,1,2,2,3,0,4,2}; // Input array
+		int val = 2; // Value to remove
 		System.out.println(ob.removeElement(nums, val));
 		
 	
