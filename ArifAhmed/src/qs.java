@@ -2,7 +2,7 @@
 public class qs {
 
 	public static void main(String[] args) {
-		int[] array = {1,2,3,4,5};
+		int[] array = {5,1,1,2,0,0};
 		int len = array.length;
 		sort(array,0,len-1);
 		printarray(array);
