@@ -54,8 +54,9 @@ public class binaryTree {
 	public static void findFullNode(Node root) {
 		if (root != null) {
 			findFullNode(root.left);
-			findFullNode(root.right);
 			visit(root);
+			findFullNode(root.right);
+			
 		}
 	}
 
