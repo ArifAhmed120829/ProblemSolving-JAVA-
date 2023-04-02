@@ -1,6 +1,5 @@
 package LeetCode_Solving;
 
-import LeetCode_Solving.SameTree.Node;
 
 public class symmetric_tree {
 	static class Node {
@@ -23,14 +22,19 @@ public class symmetric_tree {
 			}
 			if (curr == null) {
 				return new Node(val);
-			} else if (curr.val <= val) {
-				curr.right = traverse(val, curr.right);
-			} else if (curr.val >= val) {
-				curr.left = traverse(val, curr.left);
-			} else {
-				return curr;
+			}   else if(curr.left == null) {
+				
+				curr.left = traverse(val,curr.left);
+				
+				}
+			else if(curr.right == null) {
+				
+				curr.right = traverse(val,curr.right);
+				
+				
 			}
 			return curr;
+			
 		}
 
 		void push(int val) {
