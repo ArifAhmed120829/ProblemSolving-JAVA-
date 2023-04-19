@@ -19,6 +19,8 @@ public class subarray2 {
 		}
 		
 		System.out.println(Collections.max(list));
+		String s = "avc";
+		System.out.println(s.length());
 
 
 	
